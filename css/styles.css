@@ -10297,3 +10297,7 @@ form .row:first-child .floating-label-form-group {
   border-radius: 15px;
   text-align: center;
 }
+
+body.modal-open {
+  overflow: hidden;
+}
