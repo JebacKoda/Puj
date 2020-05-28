@@ -6095,7 +6095,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: darkred !important;
+  background-color: rgba(0, 0, 0, 0.9) !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -10298,6 +10298,34 @@ form .row:first-child .floating-label-form-group {
   text-align: center;
 }
 
-body.modal-open {
-  overflow: hidden;
+#prev,
+#next{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 15%;
+  color: white;
+  text-align: center;
+  opacity: 1;
+}
+
+#prev:hover,#next:hover{
+  color: red;
+  transition: 1s;
+  opacity: 1;
+}
+
+.control-group{
+
+}
+
+.control-group-message{
+  float: right;
 }
