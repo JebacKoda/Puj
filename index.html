@@ -123,11 +123,34 @@
                             Zavolejte, napište, nebo se stavte u nás na půjčovně v Praze.
                             Místo pro parkování je u půjčovny zajištěno.</p>
                     </div>
-                    <div class="col-lg-4 mr-auto"><p class="lead"></p></div>
+                    <div class="col-lg-4 mr-auto">
+                        <h2 class="font-weight-bold">Podmínky</h2>
+                        <p class="lead">Potřebujete doklad
+                            Firma - výpis z obchodního rejstříku
+                            Fyzická osoba - občanský průkaz nebo jiný doklad totožnosti
+                            Pronájem se řídí obchodními podmínkami půjčovny, které jsou nedílnou součástí pronájmu</p>
+                    </div>
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
-                    <p class="lead">text</p>
+                    <h2 class="font-weight-bold">Výhody</h2>
+                    <p class="lead">Platím, jen když potřebuji
+                        Vyberu si kontrétní řešení - stroj
+                        Mám k dispozici moderní řešení
+                        Mám bezstarostně zajištěné zákonné revize
+                        Pracuji s novými technologiemi
+                        Vyberu odpovídající příslušenství
+                        Neplatím za servis
+                        Neplatím pojištění
+                        Neplatím prostor vlastní mechanizace
+                        Nedopravuji stroj na dlouhé vzdálenosti
+                        Mám možnost širokého výběru
+                        Nejsem lhostený s ekologií
+                        Efektivně využívám své finanční prostředky
+                        Mám méně účetních dokladů (leasing, pojištění, licence, pracovní síla..atd.)
+                        Nezatěžuji firmu dlouhodobými závazky
+                        Mám konkrétní zadání = dostanu konkrétní řešení
+                        Řeším jen KDY a KAM chci požadovanou službu dodat</p>
                 </div>
             </div>
         </section>
@@ -144,6 +167,20 @@
                 <div class="row">
                     <div class="col-lg-4 ml-auto"><p class="lead">Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text </p></div>
                     <div class="col-lg-4 mr-auto"><p class="lead">Text </p></div>
+                </div>
+                <div class="text-center mt-4">
+                    <select class="vyber" id="2" onchange="Update()">
+                        <option value="0" selected="selected">Vyberte kategorii</option>
+                        <option value="1">Nakladače</option>
+                        <option value="2">Bagry</option>
+                        <option value="3">Manipulátory</option>
+                    </select>
+                    <select class="vyber" id="3" onchange="Write()">
+                        <option value="0" selected="selected">Vyberte stroj</option>
+                    </select>
+                    <span id="pdf"></span>
+                    <script type="text/javascript" src="js/dl.js">
+                    </script>
                 </div>
             </div>
         </section>
