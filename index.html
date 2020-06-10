@@ -10,6 +10,7 @@
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <script src="js/pretext.js"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
@@ -254,15 +255,15 @@
                 </div>
             </div>
         </footer>
-        <!-- Copyright Section-->
+        <!-- Copyright-->
         <div class="copyright py-4 text-center text-white">
             <div class="container"><small>Copyright © Bokula 2020</small></div>
         </div>
-        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+        <!-- Scroll na malych obrazovkach-->
         <div class="scroll-to-top d-lg-none position-fixed">
             <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
         </div>
-        <!-- Portfolio Modals--><!-- Portfolio Modal 1-->
+        <!-- Bagry-->
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
             <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content">
@@ -313,27 +314,593 @@
                                                 <p class="text-hodnota">1000 Kč/den</p>
                                             </div>
                                             <div class="row justify-content-between policko">
-                                                <a id="1" onclick="reply_click(this.id)" class="btn btn-primary" style="color: white" data-dismiss="modal" data-toggle="modal" data-target="#modalContactForm"><i class="fas fa-envelope"></i> Mám zájem</a>
+                                                <a id="" onclick="reply_click(this.id)" class="btn btn-primary" style="color: white" data-dismiss="modal" data-toggle="modal" data-target="#modalContactForm"><i class="fas fa-envelope"></i> Mám zájem</a>
                                                 <button class="btn btn-primary"><i class="fas fa-file-pdf"></i> Dokumentace</button>
-                                                <!-- Pre-text pro zprávu-->
-                                                <script type="text/javascript">
-
-                                                    function reply_click(clicked_id)
-                                                    {
-                                                        if(clicked_id == "1")
-                                                        {
-                                                            document.getElementById('form5035').value = 'Dobrý den,\nmám zájem o bagr Kramer 5035';
-                                                            document.getElementById('form32').value = 'Kramer 5035';
-                                                        }
-                                                    }
-
-                                                </script>
-
                                             </div>
                                     </div>
-                                    <div class="col-lg-5 mb-2 pole">
-                                        <img class="img-fluid mb-5 w-100" src="assets/img/manipulatory/4407.jpg" alt="" />
+                                        <div class="col-lg-5 mb-2 pole">
+                                            <img class="img-fluid mb-3 w-100" src="assets/img/manipulatory/4407.jpg" alt="" />
+                                            <p class="lead mb-2">Kramer 5035</p>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">Hmotnost</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-between policko grey-b">
+                                                <p class="text-hodnota font-weight-bold">Nosnost</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">Objem lopaty</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-center" style="background-color: rgba(255, 255, 0, 1);">
+                                                <p class="text-hodnota font-weight-bold">Cena</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">1 - 7 dní</p>
+                                                <p class="text-hodnota">2000 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko grey-b">
+                                                <p class="text-hodnota font-weight-bold">8 - 30 dní</p>
+                                                <p class="text-hodnota">1500 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">30 a více dní</p>
+                                                <p class="text-hodnota">1000 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <a id="DOPLNIT" onclick="reply_click(this.id)" class="btn btn-primary" style="color: white" data-dismiss="modal" data-toggle="modal" data-target="#modalContactForm"><i class="fas fa-envelope"></i> Mám zájem</a>
+                                                <button class="btn btn-primary"><i class="fas fa-file-pdf"></i> Dokumentace</button>
+                                            </div>
+                                        </div>
                                     </div>
+                                    <button class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Zavřít okno</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Manipulatory-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times" style="color: grey"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-9">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">Manipulátory</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <img class="img-fluid rounded mb-5 w-50" src="assets/img/kategorie/bagry.jpg" alt="" />
+                                    <p class="mb-5">Text Text Text Text </p>
+                                    <div class="row justify-content-around">
+                                        <div class="col-lg-5 mb-2 pole">
+                                            <img class="img-fluid mb-3 w-100" src="assets/img/manipulatory/1245.png" alt="" />
+                                            <p class="lead mb-2">Kramer 1245</p>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">Hmotnost</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-between policko grey-b">
+                                                <p class="text-hodnota font-weight-bold">Nosnost</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">Objem lopaty</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-center" style="background-color: rgba(255, 255, 0, 1);">
+                                                <p class="text-hodnota font-weight-bold">Cena</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">1 - 7 dní</p>
+                                                <p class="text-hodnota">2000 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko grey-b">
+                                                <p class="text-hodnota font-weight-bold">8 - 30 dní</p>
+                                                <p class="text-hodnota">1500 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">30 a více dní</p>
+                                                <p class="text-hodnota">1000 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <a id="1245" onclick="reply_click(this.id)" class="btn btn-primary" style="color: white" data-dismiss="modal" data-toggle="modal" data-target="#modalContactForm"><i class="fas fa-envelope"></i> Mám zájem</a>
+                                                <button class="btn btn-primary"><i class="fas fa-file-pdf"></i> Dokumentace</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 mb-2 pole">
+                                            <img class="img-fluid mb-3 w-100" src="assets/img/manipulatory/2706.png" alt="" />
+                                            <p class="lead mb-2">Kramer 2706</p>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">Hmotnost</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-between policko grey-b">
+                                                <p class="text-hodnota font-weight-bold">Nosnost</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">Objem lopaty</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-center" style="background-color: rgba(255, 255, 0, 1);">
+                                                <p class="text-hodnota font-weight-bold">Cena</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">1 - 7 dní</p>
+                                                <p class="text-hodnota">2000 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko grey-b">
+                                                <p class="text-hodnota font-weight-bold">8 - 30 dní</p>
+                                                <p class="text-hodnota">1500 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">30 a více dní</p>
+                                                <p class="text-hodnota">1000 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <a id="2706" onclick="reply_click(this.id)" class="btn btn-primary" style="color: white" data-dismiss="modal" data-toggle="modal" data-target="#modalContactForm"><i class="fas fa-envelope"></i> Mám zájem</a>
+                                                <button class="btn btn-primary"><i class="fas fa-file-pdf"></i> Dokumentace</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 mb-2 pole">
+                                            <img class="img-fluid mb-3 w-100" src="assets/img/manipulatory/3507.png" alt="" />
+                                            <p class="lead mb-2">Kramer 3507</p>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">Hmotnost</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-between policko grey-b">
+                                                <p class="text-hodnota font-weight-bold">Nosnost</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">Objem lopaty</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-center" style="background-color: rgba(255, 255, 0, 1);">
+                                                <p class="text-hodnota font-weight-bold">Cena</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">1 - 7 dní</p>
+                                                <p class="text-hodnota">2000 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko grey-b">
+                                                <p class="text-hodnota font-weight-bold">8 - 30 dní</p>
+                                                <p class="text-hodnota">1500 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">30 a více dní</p>
+                                                <p class="text-hodnota">1000 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <a id="3507" onclick="reply_click(this.id)" class="btn btn-primary" style="color: white" data-dismiss="modal" data-toggle="modal" data-target="#modalContactForm"><i class="fas fa-envelope"></i> Mám zájem</a>
+                                                <button class="btn btn-primary"><i class="fas fa-file-pdf"></i> Dokumentace</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 mb-2 pole">
+                                            <img class="img-fluid mb-3 w-100" src="assets/img/manipulatory/4407.png" alt="" />
+                                            <p class="lead mb-2">Kramer 4407</p>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">Hmotnost</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-between policko grey-b">
+                                                <p class="text-hodnota font-weight-bold">Nosnost</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">Objem lopaty</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-center" style="background-color: rgba(255, 255, 0, 1);">
+                                                <p class="text-hodnota font-weight-bold">Cena</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">1 - 7 dní</p>
+                                                <p class="text-hodnota">2000 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko grey-b">
+                                                <p class="text-hodnota font-weight-bold">8 - 30 dní</p>
+                                                <p class="text-hodnota">1500 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">30 a více dní</p>
+                                                <p class="text-hodnota">1000 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <a id="4407" onclick="reply_click(this.id)" class="btn btn-primary" style="color: white" data-dismiss="modal" data-toggle="modal" data-target="#modalContactForm"><i class="fas fa-envelope"></i> Mám zájem</a>
+                                                <button class="btn btn-primary"><i class="fas fa-file-pdf"></i> Dokumentace</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Zavřít okno</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nakladače-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times" style="color: grey"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-9">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">Nakladače</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <img class="img-fluid rounded mb-5 w-50" src="assets/img/kategorie/bagry.jpg" alt="" />
+                                    <p class="mb-5">Text Text Text Text </p>
+                                    <div class="row justify-content-around">
+                                        <div class="col-lg-5 mb-2 pole">
+                                            <img class="img-fluid mb-3 w-100" src="assets/img/nakladace/5035.png" alt="" />
+                                            <p class="lead mb-2">Kramer 5035</p>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">Hmotnost</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-between policko grey-b">
+                                                <p class="text-hodnota font-weight-bold">Nosnost</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">Objem lopaty</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-center" style="background-color: rgba(255, 255, 0, 1);">
+                                                <p class="text-hodnota font-weight-bold">Cena</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">1 - 7 dní</p>
+                                                <p class="text-hodnota">2000 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko grey-b">
+                                                <p class="text-hodnota font-weight-bold">8 - 30 dní</p>
+                                                <p class="text-hodnota">1500 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">30 a více dní</p>
+                                                <p class="text-hodnota">1000 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <a id="5035" onclick="reply_click(this.id)" class="btn btn-primary" style="color: white" data-dismiss="modal" data-toggle="modal" data-target="#modalContactForm"><i class="fas fa-envelope"></i> Mám zájem</a>
+                                                <button class="btn btn-primary"><i class="fas fa-file-pdf"></i> Dokumentace</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 mb-2 pole">
+                                            <img class="img-fluid mb-3 w-100" src="assets/img/nakladace/5055.png" alt="" />
+                                            <p class="lead mb-2">Kramer 5055</p>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">Hmotnost</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-between policko grey-b">
+                                                <p class="text-hodnota font-weight-bold">Nosnost</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">Objem lopaty</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-center" style="background-color: rgba(255, 255, 0, 1);">
+                                                <p class="text-hodnota font-weight-bold">Cena</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">1 - 7 dní</p>
+                                                <p class="text-hodnota">2000 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko grey-b">
+                                                <p class="text-hodnota font-weight-bold">8 - 30 dní</p>
+                                                <p class="text-hodnota">1500 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">30 a více dní</p>
+                                                <p class="text-hodnota">1000 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <a id="5055" onclick="reply_click(this.id)" class="btn btn-primary" style="color: white" data-dismiss="modal" data-toggle="modal" data-target="#modalContactForm"><i class="fas fa-envelope"></i> Mám zájem</a>
+                                                <button class="btn btn-primary"><i class="fas fa-file-pdf"></i> Dokumentace</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 mb-2 pole">
+                                            <img class="img-fluid mb-3 w-100" src="assets/img/nakladace/5065.png" alt="" />
+                                            <p class="lead mb-2">Kramer 5065</p>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">Hmotnost</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-between policko grey-b">
+                                                <p class="text-hodnota font-weight-bold">Nosnost</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">Objem lopaty</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-center" style="background-color: rgba(255, 255, 0, 1);">
+                                                <p class="text-hodnota font-weight-bold">Cena</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">1 - 7 dní</p>
+                                                <p class="text-hodnota">2000 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko grey-b">
+                                                <p class="text-hodnota font-weight-bold">8 - 30 dní</p>
+                                                <p class="text-hodnota">1500 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">30 a více dní</p>
+                                                <p class="text-hodnota">1000 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <a id="5065" onclick="reply_click(this.id)" class="btn btn-primary" style="color: white" data-dismiss="modal" data-toggle="modal" data-target="#modalContactForm"><i class="fas fa-envelope"></i> Mám zájem</a>
+                                                <button class="btn btn-primary"><i class="fas fa-file-pdf"></i> Dokumentace</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 mb-2 pole">
+                                            <img class="img-fluid mb-3 w-100" src="assets/img/nakladace/5065T.png" alt="" />
+                                            <p class="lead mb-2">Kramer 5065T</p>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">Hmotnost</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-between policko grey-b">
+                                                <p class="text-hodnota font-weight-bold">Nosnost</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">Objem lopaty</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-center" style="background-color: rgba(255, 255, 0, 1);">
+                                                <p class="text-hodnota font-weight-bold">Cena</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">1 - 7 dní</p>
+                                                <p class="text-hodnota">2000 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko grey-b">
+                                                <p class="text-hodnota font-weight-bold">8 - 30 dní</p>
+                                                <p class="text-hodnota">1500 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">30 a více dní</p>
+                                                <p class="text-hodnota">1000 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <a id="5065t" onclick="reply_click(this.id)" class="btn btn-primary" style="color: white" data-dismiss="modal" data-toggle="modal" data-target="#modalContactForm"><i class="fas fa-envelope"></i> Mám zájem</a>
+                                                <button class="btn btn-primary"><i class="fas fa-file-pdf"></i> Dokumentace</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 mb-2 pole">
+                                            <img class="img-fluid mb-3 w-100" src="assets/img/nakladace/5075.png" alt="" />
+                                            <p class="lead mb-2">Kramer 5075</p>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">Hmotnost</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-between policko grey-b">
+                                                <p class="text-hodnota font-weight-bold">Nosnost</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">Objem lopaty</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-center" style="background-color: rgba(255, 255, 0, 1);">
+                                                <p class="text-hodnota font-weight-bold">Cena</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">1 - 7 dní</p>
+                                                <p class="text-hodnota">2000 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko grey-b">
+                                                <p class="text-hodnota font-weight-bold">8 - 30 dní</p>
+                                                <p class="text-hodnota">1500 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">30 a více dní</p>
+                                                <p class="text-hodnota">1000 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <a id="5075" onclick="reply_click(this.id)" class="btn btn-primary" style="color: white" data-dismiss="modal" data-toggle="modal" data-target="#modalContactForm"><i class="fas fa-envelope"></i> Mám zájem</a>
+                                                <button class="btn btn-primary"><i class="fas fa-file-pdf"></i> Dokumentace</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 mb-2 pole">
+                                            <img class="img-fluid mb-3 w-100" src="assets/img/nakladace/5085.png" alt="" />
+                                            <p class="lead mb-2">Kramer 5085</p>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">Hmotnost</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-between policko grey-b">
+                                                <p class="text-hodnota font-weight-bold">Nosnost</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">Objem lopaty</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-center" style="background-color: rgba(255, 255, 0, 1);">
+                                                <p class="text-hodnota font-weight-bold">Cena</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">1 - 7 dní</p>
+                                                <p class="text-hodnota">2000 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko grey-b">
+                                                <p class="text-hodnota font-weight-bold">8 - 30 dní</p>
+                                                <p class="text-hodnota">1500 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">30 a více dní</p>
+                                                <p class="text-hodnota">1000 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <a id="5085" onclick="reply_click(this.id)" class="btn btn-primary" style="color: white" data-dismiss="modal" data-toggle="modal" data-target="#modalContactForm"><i class="fas fa-envelope"></i> Mám zájem</a>
+                                                <button class="btn btn-primary"><i class="fas fa-file-pdf"></i> Dokumentace</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 mb-2 pole">
+                                            <img class="img-fluid mb-3 w-100" src="assets/img/nakladace/8085.png" alt="" />
+                                            <p class="lead mb-2">Kramer 8085</p>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">Hmotnost</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-between policko grey-b">
+                                                <p class="text-hodnota font-weight-bold">Nosnost</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">Objem lopaty</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-center" style="background-color: rgba(255, 255, 0, 1);">
+                                                <p class="text-hodnota font-weight-bold">Cena</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">1 - 7 dní</p>
+                                                <p class="text-hodnota">2000 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko grey-b">
+                                                <p class="text-hodnota font-weight-bold">8 - 30 dní</p>
+                                                <p class="text-hodnota">1500 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">30 a více dní</p>
+                                                <p class="text-hodnota">1000 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <a id="8085" onclick="reply_click(this.id)" class="btn btn-primary" style="color: white" data-dismiss="modal" data-toggle="modal" data-target="#modalContactForm"><i class="fas fa-envelope"></i> Mám zájem</a>
+                                                <button class="btn btn-primary"><i class="fas fa-file-pdf"></i> Dokumentace</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 mb-2 pole">
+                                            <img class="img-fluid mb-3 w-100" src="assets/img/nakladace/8085T.png" alt="" />
+                                            <p class="lead mb-2">Kramer 8085T</p>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">Hmotnost</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-between policko grey-b">
+                                                <p class="text-hodnota font-weight-bold">Nosnost</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">Objem lopaty</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-center" style="background-color: rgba(255, 255, 0, 1);">
+                                                <p class="text-hodnota font-weight-bold">Cena</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">1 - 7 dní</p>
+                                                <p class="text-hodnota">2000 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko grey-b">
+                                                <p class="text-hodnota font-weight-bold">8 - 30 dní</p>
+                                                <p class="text-hodnota">1500 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">30 a více dní</p>
+                                                <p class="text-hodnota">1000 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <a id="8085t" onclick="reply_click(this.id)" class="btn btn-primary" style="color: white" data-dismiss="modal" data-toggle="modal" data-target="#modalContactForm"><i class="fas fa-envelope"></i> Mám zájem</a>
+                                                <button class="btn btn-primary"><i class="fas fa-file-pdf"></i> Dokumentace</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 mb-2 pole">
+                                            <img class="img-fluid mb-3 w-100" src="assets/img/nakladace/8105.png" alt="" />
+                                            <p class="lead mb-2">Kramer 8105</p>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">Hmotnost</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-between policko grey-b">
+                                                <p class="text-hodnota font-weight-bold">Nosnost</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">Objem lopaty</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-center" style="background-color: rgba(255, 255, 0, 1);">
+                                                <p class="text-hodnota font-weight-bold">Cena</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">1 - 7 dní</p>
+                                                <p class="text-hodnota">2000 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko grey-b">
+                                                <p class="text-hodnota font-weight-bold">8 - 30 dní</p>
+                                                <p class="text-hodnota">1500 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">30 a více dní</p>
+                                                <p class="text-hodnota">1000 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <a id="8105" onclick="reply_click(this.id)" class="btn btn-primary" style="color: white" data-dismiss="modal" data-toggle="modal" data-target="#modalContactForm"><i class="fas fa-envelope"></i> Mám zájem</a>
+                                                <button class="btn btn-primary"><i class="fas fa-file-pdf"></i> Dokumentace</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 mb-2 pole">
+                                            <img class="img-fluid mb-3 w-100" src="assets/img/nakladace/8115.png" alt="" />
+                                            <p class="lead mb-2">Kramer 8115</p>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">Hmotnost</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-between policko grey-b">
+                                                <p class="text-hodnota font-weight-bold">Nosnost</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">Objem lopaty</p>
+                                                <p class="text-hodnota">3450kg</p>
+                                            </div>
+                                            <div class="row justify-content-center" style="background-color: rgba(255, 255, 0, 1);">
+                                                <p class="text-hodnota font-weight-bold">Cena</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">1 - 7 dní</p>
+                                                <p class="text-hodnota">2000 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko grey-b">
+                                                <p class="text-hodnota font-weight-bold">8 - 30 dní</p>
+                                                <p class="text-hodnota">1500 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <p class="text-hodnota font-weight-bold">30 a více dní</p>
+                                                <p class="text-hodnota">1000 Kč/den</p>
+                                            </div>
+                                            <div class="row justify-content-between policko">
+                                                <a id="8115" onclick="reply_click(this.id)" class="btn btn-primary" style="color: white" data-dismiss="modal" data-toggle="modal" data-target="#modalContactForm"><i class="fas fa-envelope"></i> Mám zájem</a>
+                                                <button class="btn btn-primary"><i class="fas fa-file-pdf"></i> Dokumentace</button>
+                                            </div>
+                                        </div>
                                     </div>
                                     <button class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Zavřít okno</button>
                                 </div>
@@ -349,9 +916,6 @@
             <div class="modal-dialog" id="modal-contact" role="document">
                 <div class="modal-content">
                     <div class="modal-header text-center">
-                        <a class="" type="button" data-dismiss="modal" data-toggle="modal" data-target="#portfolioModal1">
-                            <span aria-hidden="true"><i class="fas fa-angle-left" style="color: grey"></i></span>
-                        </a>
                         <h4 class="modal-title w-100 font-weight-bold">Napište nám</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
