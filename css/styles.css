@@ -10371,11 +10371,11 @@ form .row:first-child .floating-label-form-group {
   font-weight:normal;
 }
 
-#pdf{
+#pdf {
 
 }
 
-#logo{
+#logo {
   height: auto;
   width: 100%;
 }
@@ -10383,4 +10383,8 @@ form .row:first-child .floating-label-form-group {
 .modal-contact {
   position: relative;
   flex: 1 1 auto;
+}
+
+.modal-contact-body {
+  height: auto;
 }
