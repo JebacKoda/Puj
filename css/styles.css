@@ -10374,3 +10374,13 @@ form .row:first-child .floating-label-form-group {
 #pdf{
 
 }
+
+#logo{
+  height: auto;
+  width: 100%;
+}
+
+.modal-contact {
+  position: relative;
+  flex: 1 1 auto;
+}
