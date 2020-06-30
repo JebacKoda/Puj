@@ -10316,11 +10316,17 @@ form .row:first-child .floating-label-form-group {
   opacity: 1;
 }
 
-#prev:hover,#next:hover{
+#next:hover{
+  color: red;
+  transition: 2s;
+  opacity: 1;
+}
+#prev:hover{
   color: red;
   transition: 1s;
   opacity: 1;
 }
+
 
 .control-group{
 
@@ -10371,13 +10377,17 @@ form .row:first-child .floating-label-form-group {
   font-weight:normal;
 }
 
+#logo {
+  height: auto;
+  width: 100%;
+}
+
 #pdf {
 
 }
 
-#logo {
-  height: auto;
-  width: 100%;
+#odkaz {
+    border: 2px solid red;
 }
 
 .modal-contact {

@@ -7,9 +7,9 @@ function Update()
     var Categories =
         [
             /*       NAZEV,       ID,  LIST STROJU jako pole */
-            ["Nakladače", "1", ["5055", "5065", "5075", "5085", "5095", "8085", "8095"]],
+            ["Nakladače", "1", ["5035","5055", "5065","5065T", "5075", "5085", "8085", "8085T", "8105", "8115"]],
             ["Bagry", "2", ["ViO33-6", "ViO38-6", "SV60"]],
-            ["Manipulátory", "3", ["1245", "2205", "2706"]]
+            ["Manipulátory", "3", ["1245", "2706", "3507", "4407"]]
         ];
     /* prirazeni weboveho prvku dropdown list ktery obsahuje kategorie do promenne DropDownCategories */
     var DropDownCategories = document.getElementById("2");
@@ -81,6 +81,6 @@ function Write()
         var Text = DropDownMachines.options[DropDownMachines.selectedIndex].text;
 
         /* prepsani html kodu uvnitr weboveho prvku ID="3" na ODKAZ, ktery obsahuje Text (hodnota TEXT zvoleneho stroje) tak, aby odkazoval na konkretni pdf */
-        document.getElementById("pdf").innerHTML = "<a id='odkaz' target='_blank' href='pdf/nakladace/" + Text + ".pdf'>" + Text + "</a>";
+        document.getElementById("pdf").innerHTML = "<a id='odkaz' target='_blank' href='dokumentace/pdf/" + Text + ".pdf'><i class=\"fa fa-file-pdf\"></i>" + Text + "</a>";
     }
 }
